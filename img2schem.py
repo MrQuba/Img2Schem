@@ -3,6 +3,9 @@ import numpy as np
 import find
 from litemapy import Schematic, Region, BlockState
 # Colors of result might not be fully accurate
+def rgb_to_hex(pixel):
+        return "#{:02x}{:02x}{:02x}".format(pixel[0], pixel[1], pixel[2])
+
 file_name = "image.png" # change it to convert different image
 img = Image.open(file_name)
 
